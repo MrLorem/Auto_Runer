@@ -1,0 +1,53 @@
+﻿<mui:ModernWindow x:Class="Auto_Runer.MainWindow"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+                  Title="Auto Runer" 
+                   Closed="MainWindow_OnClosed"
+                   Style="{StaticResource BlankWindow}" Height="409" Width="549">
+    <Canvas Margin="10,6,2,6">
+
+        <Border BorderBrush="#FF000000" BorderThickness="1,1,1,1" CornerRadius="8,8,8,8"  Width="120" Canvas.Left="8" Height="349" >
+            <Grid ShowGridLines="True" Margin="0,9" >
+                <Image x:Name="image_add" Height="34" Width="37" Source="Icons/add_icon.png" MouseDown="Image_add_OnMouseDown" Margin="14,0,67,295" />
+                <Image x:Name="image_dell" Height="34" Canvas.Left="74" Width="37" Source="Icons/dell_icon.png" MouseDown="Image_dell_OnMouseDown" Margin="65,0,16,295"  />
+                <Border BorderBrush="#FF000000" BorderThickness="1,1,1,1" CornerRadius="8,8,8,8" Canvas.Top="63" Width="110" Canvas.Left="8" Margin="5,39,3,0">
+                    <ListBox  x:Name="listBox" Canvas.Left="10" Canvas.Top="72" Width="100" SelectionChanged="ListBox_OnSelectionChanged" Margin="4,9,4,5" />
+                </Border>
+            </Grid>
+        </Border>
+
+        <Canvas>
+            <StackPanel Canvas.Left="158" Canvas.Top="23" Height="313" Width="86">
+                <Label Margin="0,0,0,0" >Название</Label>
+                <Label Margin="0,20,0,0" >Состояние</Label>
+                <Label Margin="0,20,0,0" >Время</Label>
+                <Label Margin="0,20,0,0" >Дата запуска</Label>
+                <Label Margin="0,20,0,0" >Путь</Label>
+                <Label Margin="0,20,0,0" >Флаги</Label>
+                <Label Margin="0,20,0,0" >Цикличность</Label>
+                <Label Margin="0,20,0,0" >Интервал</Label>
+                <Label Margin="0,20,0,0" >Ошибка</Label>
+            </StackPanel>
+
+            <StackPanel Height="313" Width="276" Canvas.Left="249" Canvas.Top="23" VerticalAlignment="Center">
+
+                <Label x:Name="lblName"  Margin="0,0,0,0" Content="НАЗВАНИЕ" />
+                <Label x:Name="lblSost"  Margin="0,20,0,0" Content="СОСТОЯНИЕ" />
+                <Label x:Name="lblbTime"  Margin="0,20,0,0" Content="ВРЕМЯ" />
+                <Label x:Name="lblData" Margin="0,20,0,0" Content="ДАТА ЗАПУСКА"/>
+                <Label x:Name="lblPath"  Margin="0,20,0,0"  Content="ПУТЬ"/>
+                <Label x:Name="lblFlags"  Margin="0,20,0,0" Content="ФЛАГИ"/>
+                <Label x:Name="lblCkl"  Margin="0,20,0,0" Content="ЦИКЛИЧНОСТЬ" />
+                <Label x:Name="lblInterval"  Margin="0,20,0,0" Content="ИНТЕРВАЛ" />
+                <Label x:Name="lblError"  Margin="0,20,0,0" Content="ОШИБКА" />
+            </StackPanel>
+
+
+        </Canvas>
+
+
+    </Canvas>
+
+
+</mui:ModernWindow>

@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="Auto_Runer.UCForAdd6"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+              xmlns:local="clr-namespace:Auto_Runer"
+            mc:Ignorable="d" Height="113.5" Width="280">
+
+    <Grid  >
+        <Label Content="Укажите промежуток цикличного запуска" Margin="10,10,10,83"></Label>
+        <xctk:TimePicker ValueChanged="TimePicker_OnValueChanged" x:Name="TimePicker" Margin="74,52,82,30"></xctk:TimePicker>
+    </Grid>
+</UserControl>
